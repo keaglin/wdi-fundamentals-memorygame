@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+nav {
+  background-color: #00a6b3;
+  padding: 10px 0;
+}
+
 h1, h2, h3, a {
   text-transform: uppercase;
 }
@@ -20,7 +25,7 @@ a {
   padding: 0 20px;
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  color: #f15b31;
+  color: #ffffff;
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 18px;
@@ -55,7 +60,7 @@ h3 {
 }
 
 section h3 {
-  margin: 20px auto 0;
+  margin: 30px auto 0;
 }
 section p {
   font-family: "Droid Serif", serif;
@@ -64,8 +69,9 @@ section p {
 }
 
 section p a {
-  font-size: 14px;
   padding: 0;
+  font-size: 14px;
+  color: #f15b31;
 }
 
 header {
@@ -74,15 +80,6 @@ header {
   padding: 30px 20px; 
 }
 
-nav {
-  background-color: #00a6b3;
-  /* color: #ffffff; */
-  padding: 10px 0;
-}
-
-nav a {
-  color: #ffffff;
-}
 
 main {
   width: 850px;
