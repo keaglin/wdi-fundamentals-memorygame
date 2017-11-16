@@ -8,6 +8,10 @@ nav {
   padding: 10px 0;
 }
 
+nav a {
+  display: inline-block;
+}
+
 h1, h2, h3, a {
   text-transform: uppercase;
 }
@@ -22,7 +26,7 @@ h1 {
 }
 
 a {
-  padding: 0 20px;
+  margin: 0 20px;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   color: #ffffff;
@@ -69,7 +73,7 @@ section p {
 }
 
 section p a {
-  padding: 0;
+  margin: auto 0;
   font-size: 14px;
   color: #f15b31;
 }
