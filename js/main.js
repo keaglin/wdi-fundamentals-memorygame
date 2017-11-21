@@ -13,14 +13,30 @@ var cards = [
     cardImage: 'images/king-of-diamonds.png'}
 ]
 var cardsInPlay = []
+var flipCounter = 0
+
+var resetBoard = function() {
+  for (var i = 0; i < cards.length; i++) {
+    var resetCard = document.querySelectorAll('img')[i]
+    resetCard.setAttribute('src', 'images/back.png')
+  }
+  cardsInPlay = []
+  flipCounter = 0
+}
 
 var checkForMatch = function() {
   if (cardsInPlay[0] === cardsInPlay[1]) {
     console.log("You found a match!")
     alert('You found a match!')
+    // how many cards have been turned over? if it's 4 or more, we want to resetBoard
+    //how do we know a card has been turned over?
   } else {
     console.log("Sorry, try again.")
     alert('Sorry, try again')
+    resetBoard()
+  }
+  if (flipCounter >= 4) {
+    resetBoard()
   }
 }
 
@@ -31,8 +47,11 @@ var flipCard = function() {
   console.log(cards[cardId].suit)
   cardsInPlay.push(cards[cardId].rank)
   this.setAttribute('src', cards[cardId].cardImage)
-  if (cardsInPlay.length === 2) {
+  ++flipCounter
+  console.log(flipCounter)
+  if (cardsInPlay.length > 1) {
     checkForMatch()
+    cardsInPlay = []
   }
 }
 
