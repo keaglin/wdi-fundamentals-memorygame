@@ -135,7 +135,9 @@ footer {
 
 button {
   display: inline-block;
-  margin: 40px auto 20px;
+  margin: 20px auto -15px;
   font-family: Raleway, sans-serif;
   font-size: 20px;
+  background-color: #f15b31;
+  color: white;
 }
