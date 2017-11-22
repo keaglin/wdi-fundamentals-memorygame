@@ -128,3 +128,14 @@ footer {
     color: #f15b31;
     font-weight: 700;
   }
+
+.canHide {
+  display: none;
+}
+
+button {
+  display: inline-block;
+  margin: 40px auto 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+}
